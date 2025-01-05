@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-01-05T20:00:27 PKT" name="TestSuite" finished-at="2025-01-05T20:01:21 PKT" duration-ms="53991">
+    <groups>
+    </groups>
+    <test started-at="2025-01-05T20:00:27 PKT" name="LoginTests" finished-at="2025-01-05T20:01:21 PKT" duration-ms="53991">
+      <class name="LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:LoginTest@7b2bbc3]" started-at="2025-01-05T20:00:27 PKT" name="setUp" finished-at="2025-01-05T20:00:34 PKT" duration-ms="7128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogin()[pri:0, instance:LoginTest@7b2bbc3]" started-at="2025-01-05T20:00:34 PKT" name="testLogin" finished-at="2025-01-05T20:00:38 PKT" duration-ms="3233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:LoginTest@7b2bbc3]" started-at="2025-01-05T20:00:38 PKT" name="setUp" finished-at="2025-01-05T20:00:43 PKT" duration-ms="5072" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogOut()[pri:0, instance:LoginTest@7b2bbc3]" started-at="2025-01-05T20:00:43 PKT" name="testLogOut" finished-at="2025-01-05T20:00:51 PKT" duration-ms="7763" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogOut -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:LoginTest@7b2bbc3]" started-at="2025-01-05T20:00:51 PKT" name="setUp" finished-at="2025-01-05T20:01:04 PKT" duration-ms="13000" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validationErrorMessage()[pri:0, instance:LoginTest@7b2bbc3]" started-at="2025-01-05T20:01:04 PKT" name="validationErrorMessage" finished-at="2025-01-05T20:01:06 PKT" duration-ms="1991" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validationErrorMessage -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:LoginTest@7b2bbc3]" started-at="2025-01-05T20:01:06 PKT" name="setUp" finished-at="2025-01-05T20:01:18 PKT" duration-ms="12912" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="enterUsernameWithEmptyPasswordErrorMessage()[pri:0, instance:LoginTest@7b2bbc3]" started-at="2025-01-05T20:01:18 PKT" name="enterUsernameWithEmptyPasswordErrorMessage" finished-at="2025-01-05T20:01:21 PKT" duration-ms="2845" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterUsernameWithEmptyPasswordErrorMessage -->
+      </class> <!-- LoginTest -->
+    </test> <!-- LoginTests -->
+  </suite> <!-- TestSuite -->
+</testng-results>
