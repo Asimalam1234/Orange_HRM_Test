@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                // Checkout the repository
+                git 'https://github.com/Asimalam1234/Orange_HRM_Test.git'
+            }
+        }
+
+        stage('Build and Test') {
+            steps {
+                // Run Maven clean and test (TestNG tests)
+                sh 'mvn clean test'
+            }
+        }
+
+        stage('Publish Test Results') {
+            steps {
+                // Publish TestNG results
+                junit '**/target/surefire-reports/*.xml'
+            }
+        }
+    }
+}
