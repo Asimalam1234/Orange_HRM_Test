@@ -50,6 +50,21 @@ public class LoginTest {
 	}
 
 	@Test
+	public void forrgotPasswordLink() {
+		WebElement forgetPasswordLink=driver.findElement(By.xpath("//p[contains(@class,'orangehrm-login-forgot-header')]"));
+		forgetPasswordLink.click();
+		WebElement userNameField=driver.findElement(By.xpath("//input[@name='username']"));
+		userNameField.sendKeys("Adim");
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		 // Find the element (for example, an element with id 'hiddenElement')
+        WebElement passwrodLink = driver.findElement(By.xpath("//h6[text()='Reset Password link sent successfully']"));
+
+        // Assert that the element is not visible
+        Assert.assertTrue(passwrodLink.isDisplayed(), "The Text is visible");
+		
+	}
+	
+	@Test
 	public void testLogOut() {
 
 		WebElement username = driver.findElement(By.xpath("//input[@name='username']"));
@@ -94,10 +109,10 @@ public class LoginTest {
 		Assert.assertTrue(errorForPassword.isDisplayed());
 	}
 
-//    // Tear down method to close WebDriver
-//    @AfterMethod
-//    public void tearDown() {
-//        // Close the browser
-//        driver.quit();
-//    }
+    // Tear down method to close WebDriver
+    @AfterMethod
+    public void tearDown() {
+        // Close the browser
+        driver.quit();
+    }
 }
